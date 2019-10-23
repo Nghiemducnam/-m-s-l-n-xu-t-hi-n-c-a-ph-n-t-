@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        var input = parseInt(prompt("nhập số: "))
+        var nums = [];
+        var count= 0;
+        for(let i = 0; i<100; i++){
+            nums[i]= Math.floor(Math.random()*100);
+        }
+        document.write(nums);
+
+        function checkCount() {
+            for(let j=0; j<nums.length; j++) {
+                if(nums[j]==input) {
+                    count++;
+                }
+            } document.write("<br>" +"phần tử " + input + ' xuất hiện ' +count + ' lần');
+
+        }
+        checkCount();
+    </script>
+
+</body>
+</html>
